@@ -22,6 +22,14 @@
  //     your `birthYear` and the `currentYear`
  //     (NOTE: DO NOT simply assign a number to the `age` variable, use an expression!)
 
+let firstName = 'Carlyse';
+let lastName = 'Jordan';
+const birthYear = 1989;
+const currentYear = 2017;
+let middleName;
+let age= currentYear - birthYear;
+console.log(age);
+console.log(firstName + lastName);
 
 
  // TODO 2:
@@ -32,9 +40,15 @@
  //     between 1900 and your birth year.
  //     NOTE: This variable SHOULD NOT have any decimal places!
  //     NOTE: You MUST USE an expression for this, it may have more than one operation!
+let greeting= 'Hello there ' + firstName +'!' ;
+console.log(greeting);
 
-
-
+let years = ( birthYear - 1900 ); // years = 89
+console.log(years);
+let remainder = years % 10; // remainder = 9
+console.log(remainder);
+let decades = (years - remainder) / 10;
+console.log(decades);
  // TODO 3:
  // (a) Declare a new variable called `style`, but do not instantiate it immediately.
  //     If your age is under 35, assign "hip" in this variable, otherwise assign "classic"
@@ -46,7 +60,22 @@
  //     Next, declare a variable called `review`, then either assign "good" or "bad"
  //         depending on the value of `instructorIsAwesome`
  //     NOTE: You MUST use code to determine which value to assign to `review`!
+let style;
+if (age < 35){
+  style = 'hip';
+} else {
+  style ='classic';
+}
+console.log(style);
 
+let instructorIsAwesome = true;
+let review;
+if (instructorIsAwesome === true){
+  review = "good";
+} else {
+  review = "bad";
+}
+console.log(review);
 
 
  // TODO 4:
@@ -60,7 +89,7 @@
  //     NOTE: You must implement 'add', 'subtract', 'multiply', and 'divide'
  // (c) If the `math` function is NOT called with one of the operations in (b)
  //     then it should return the value for something that is Not a Number
-
+function math
 
 
 
