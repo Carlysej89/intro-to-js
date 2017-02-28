@@ -89,7 +89,26 @@ console.log(review);
  //     NOTE: You must implement 'add', 'subtract', 'multiply', and 'divide'
  // (c) If the `math` function is NOT called with one of the operations in (b)
  //     then it should return the value for something that is Not a Number
-function math
+function math(numberOne, numberTwo, operation) {
+  if (operation === "add") {
+    let addtion = numberOne + numberTwo;
+    return addtion;
+  }
+  if (operation === "subtract") {
+    let subtraction = numberOne - numberTwo;
+    return subtraction;
+  }
+  if (operation === "multiply") {
+    let multiplication = numberOne * numberTwo;
+    return multiplication;
+  }
+  if (operation === "divide") {
+    let division = numberOne / numberTwo;
+    return division;
+  }
+
+  return NaN;
+}
 
 
 
@@ -101,8 +120,22 @@ function math
  //     Finally, the function should return that new sentence.
  // (b) If any of the words is not provided to the function then it should use
  //     the word "bananas" instead.
+function madlib(wordOne, wordTwo, wordThree, wordFour) {
+  if (wordOne === false) {
+    wordOne = bananas;
+  }
+  if (wordTwo === false) {
+    wordTwo = bananas;
+  }
+  if (wordThree === false) {
+    wordThree = bananas;
+  }
+  if (wordFour === false) {
+    wordFour = bananas;
+  }
+  return ("I prefer" + wordOne + "while I" + wordTwo + "so that I don't" + wordThree + "on the" + wordFour);
 
-
+}
 
 
  /* ******************************************************************
