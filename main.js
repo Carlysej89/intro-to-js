@@ -122,16 +122,16 @@ function math(numberOne, numberTwo, operation) {
  //     the word "bananas" instead.
 function madlib(wordOne, wordTwo, wordThree, wordFour) {
   if (wordOne === false) {
-    wordOne = bananas;
+    wordOne = "bananas";
   }
   if (wordTwo === false) {
-    wordTwo = bananas;
+    wordTwo = "bananas";
   }
   if (wordThree === false) {
-    wordThree = bananas;
+    wordThree = "bananas";
   }
   if (wordFour === false) {
-    wordFour = bananas;
+    wordFour = "bananas";
   }
   return ("I prefer" + wordOne + "while I" + wordTwo + "so that I don't" + wordThree + "on the" + wordFour);
 
